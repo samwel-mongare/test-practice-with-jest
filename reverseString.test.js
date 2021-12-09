@@ -1,14 +1,13 @@
-const { TestWatcher } = require('@jest/core');
-const reverseString = require('./reverseString');
+const reverseString = require('./reverseString.js');
 
 test('reverseString function exists', () => {
-    expect(reverseString).toBeDefined();
+  expect(reverseString).toBeDefined();
 });
 
 test('String reverses', () => {
-    expect(reverseString('hello')).toEqual('olleh');
+  expect(reverseString('hello')).toEqual('olleh');
 });
 
 test('String reverses with uppercase', () => {
-    expect(reverseString('hEllo')).toEqual('olleh');
+  expect(reverseString('hEllo')).toEqual('olleh');
 });
